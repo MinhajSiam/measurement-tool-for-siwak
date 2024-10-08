@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page with Measurement Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Product Page Container -->
+    <div class="product-container">
+        <!-- Product Image Section -->
+        <div class="product-image">
+            <img src="https://via.placeholder.com/400" alt="Product Image">
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h1>Stylish T-Shirt</h1>
+            <p class="product-description">
+                This stylish T-shirt is made from 100% cotton and comes in various sizes to suit your fit. Use our
+                measurement tool below to find your perfect size.
+            </p>
+            <p class="price">$29.99</p>
+
+            <!-- Measurement Tool Section -->
+            <div class="measurement-tool">
+                <h2>Find Your Perfect Size</h2>
+                <form id="measurement-form">
+                    <div class="form-group">
+                        <label for="height">Height (in feet and inches):</label>
+                        <div class="height-input">
+                            <input type="number" id="feet" placeholder="Feet" min="4" max="7" required>
+                            <input type="number" id="inches" placeholder="Inches" min="0" max="11" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">Weight (in kg):</label>
+                        <input type="number" id="weight" placeholder="Weight in kg" min="40" max="150" required>
+                    </div>
+
+                    <button type="button" id="calculate-size">Find My Size</button>
+                </form>
+
+                <!-- Result Display -->
+                <div id="result" class="result">
+                    <h2>Your Recommended Size: <span id="size-output">N/A</span></h2>
+                </div>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
