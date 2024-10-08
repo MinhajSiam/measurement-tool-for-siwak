@@ -19,7 +19,7 @@ document.getElementById("calculate-size").addEventListener("click", function () 
     } else if (totalHeightInInches >= 66 && totalHeightInInches <= 71 && weight >= 68 && weight <= 77) {
         size = "XL";
     } else {
-        size = "XXL"; // For sizes outside of given reference ranges
+        size = "There are no available sizes for you"; // For cases outside the defined ranges, default to XXL
     }
 
     // Display the result
