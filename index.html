@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Measurement Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clothing Size Measurement Tool</h1>
+        <p>Enter your height and weight to find your recommended size</p>
+
+        <!-- Form for Height and Weight Input -->
+        <form id="measurement-form">
+            <div class="form-group">
+                <label for="height">Height (in feet and inches):</label>
+                <div class="height-input">
+                    <input type="number" id="feet" placeholder="Feet" min="4" max="7" required>
+                    <input type="number" id="inches" placeholder="Inches" min="0" max="11" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" id="weight" placeholder="Weight in kg" min="40" max="150" required>
+            </div>
+
+            <button type="button" id="calculate-size">Find My Size</button>
+        </form>
+
+        <!-- Result Display -->
+        <div id="result" class="result">
+            <h2>Your Recommended Size: <span id="size-output">N/A</span></h2>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
